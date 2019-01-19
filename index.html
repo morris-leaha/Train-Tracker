@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Train Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- LINK TO BOOTSTRAP (REMOVES NEED FOR RESET CSS) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <!-- LINK TO CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <!-- LINK TO GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre|PT+Mono|Staatliches|Zilla+Slab+Highlight" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container" id="main-container">
+
+        <header>
+
+        </header>
+
+        <section class="main-section">
+
+            <div class="jumbotron jumbotron-fluid text-center">
+                <div class="container">
+                    <h1>Train Tracker</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            Current Train Schedule
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-bordered table-hover table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Train Name</th>
+                                        <th scope="col">Destination</th>
+                                        <th scope="col">Frequency (min)</th>
+                                        <th scope="col">Next Arrival</th>
+                                        <th scope="col">Minutes Away</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <!-- <th scope="row">1</th> -->
+                                        
+                                    </tr>
+                                    <tr>
+                                        <!-- <th scope="row">2</th> -->
+                                        
+                                    </tr>
+                                    <tr>
+                                        <!-- <th scope="row">3</th> -->
+                                        
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            Add Train
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput">Train Name</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Train Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput2">Destination</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Destination">
+                                </div>
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput2">First Train Time (HH:mm - military time)</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="First Train Time">
+                                </div>
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput2">Frequency (min)</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Frequency">
+                                </div>
+                                <input class="btn btn-dark" type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+    <footer class="footer sticky-bottom">
+        <div class="container text-center">
+            <span>Copyright &copy; 2018 Leah Morris</span>
+        </div>
+    </footer>
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>
