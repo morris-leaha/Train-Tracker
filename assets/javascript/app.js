@@ -21,6 +21,10 @@
   // Create an on click event tied to the submit button
     // Utilize the event.preventDefault() method bc of submit button
     // Grab values from input fields and store in respective global variables
+        // train name: name = $("#train-name").val().trim();
+        // train destination$("#train-destination").val().trim();
+        // first train time (military time) $("#first-train").val().trim();
+        // frequency of train (mins) $("#train-frequency").val().trim();
     // Push these values into firebase route directory 
     // clear text input fields from input form
 
@@ -28,5 +32,5 @@
   // Create an event listener function that allows new info input to be added to database and written to DOM when user adds
     // console.log the 'snapshot'
         // store each value in its own variable
-    // write respective train values to table 
-        // handle the errors 
+    // write respective values to table 
+        
