@@ -38,7 +38,7 @@
                             Current Train Schedule
                         </div>
                         <div class="card-body">
-                            <table class="table table-bordered table-hover table-striped">
+                            <table class="table table-bordered table-hover table-striped" id="train-table">
                                 <thead>
                                     <tr>
                                         <th scope="col">Train Name</th>
@@ -49,10 +49,6 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <td id="train-name" scope="col"></td>
-                                    <td id="train-destination" scope="col"></td>
-                                    <td id="train-time" scope="col"></td>
-                                    <td id="train-frequency" scope="col"></td>
                                 </tbody>
                             </table>
                         </div>
@@ -69,22 +65,21 @@
                             <form>
                                 <div class="form-group">
                                     <label for="train-name">Train Name</label>
-                                    <input type="text" class="form-control" id="train-name" placeholder="Train Name">
+                                    <input type="text" class="form-control" id="train-name-input" placeholder="Train Name">
                                 </div>
                                 <div class="form-group">
                                     <label for="train-destination">Destination</label>
-                                    <input type="text" class="form-control" id="train-destination" placeholder="Destination">
+                                    <input type="text" class="form-control" id="train-destination-input" placeholder="Destination">
                                 </div>
                                 <div class="form-group">
                                     <label for="first-train">First Train Time (HH:mm - military time)</label>
-                                    <input type="text" class="form-control" id="first-train" placeholder="First Train Time">
+                                    <input type="text" class="form-control" id="first-train-input" placeholder="First Train Time">
                                 </div>
                                 <div class="form-group">
                                     <label for="train-frequency">Frequency (min)</label>
-                                    <input type="text" class="form-control" id="train-frequency" placeholder="Frequency">
+                                    <input type="text" class="form-control" id="train-frequency-input" placeholder="Frequency">
                                 </div>
-                                <input class="btn btn-dark" type="submit" value="Submit">
-                            </form>
+                                <button class="btn btn-secondary" id="add-train-btn">Submit</button>                            </form>
                         </div>
                     </div>
                 </div>
